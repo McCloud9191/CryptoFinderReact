@@ -1,0 +1,83 @@
+.App{
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+
+}
+.cryptoHeader{
+  width: 100%;
+  height: 200px;
+  background: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.cryptoHeader input{
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  outline: none;
+}
+.cryptoContainer{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  justify-content: center;
+}
+
+.coin{
+  height: 300px;
+  width: 400px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coin img{
+  width: 50px;
+}
+
+.coin button{
+  border-radius: 10px;
+  padding: 15px 35px;
+  border: none;
+  background: palevioletred;
+  color: papayawhip;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1700px){
+  .cryptoContainer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .cryptoContainer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 850px){
+  .cryptoContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
